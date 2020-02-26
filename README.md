@@ -48,23 +48,23 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <h1 id="1">数值计算</h1>
 
     ```python
-    #!/usr/bin/env python3
+    #!/usr/bin/env python
     from sympy import *
+    def f(x):
 
-def f(x):
     return exp(x)+ x**3 - 2*x+5
 
-x = symbols("x")  # 符号x，自变量
+    x = symbols("x")  # 符号x，自变量
 
-dify = diff(f(x),x) #求导
+    dify = diff(f(x),x) #求导
 
-print(dify)
+    print(dify)
 
-x0 = 1.5  #初值
-e = 0.000001  #精度
+    x0 = 1.5  #初值
+    e = 0.000001  #精度
 
-while abs(f(x0)) > e:
-    x0 = x0 - f(x0)/(dify.subs('x', x0))
+    while abs(f(x0)) > e:
+      x0 = x0 - f(x0)/(dify.subs('x', x0))
     print(x0)
     ```
 
