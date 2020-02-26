@@ -51,7 +51,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ```python
 from sympy import *
 def f(x):
-    return x**2-2
+    return exp(x)+ x**3 - 2*x+5
 
 x = symbols("x")  # 符号x，自变量
 
