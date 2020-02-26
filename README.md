@@ -48,7 +48,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <h1 id="1">数值计算</h1>
 
   
-
+```markdown
 from sympy import *
 def f(x):
     return x**2-2
@@ -65,7 +65,7 @@ e = 0.000001
 while abs(f(x0)) > e:
     x0 = x0 - f(x0)/(dify.subs('x', x0))
     print(x0)
-    
+```
 
 
 
