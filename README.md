@@ -39,7 +39,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 # Contents  
 - [深度学习](#深度学习)  
 - [数值计算](#数值计算)
-- [迭代法](#迭代法)
+  - [迭代法](#迭代法)
 - [Design idea and innovation point](#design-idea-and-innovation-point)  
   - [Background](#background) 
   - [Design inspirations](#design-inspirations) 
