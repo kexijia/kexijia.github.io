@@ -48,8 +48,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <h1 id="1">数值计算</h1>
 
     ```python
-    #!/usr/bin/env python3
-    print("Hello, World!");
+    print("Hello, World!")
     ```
 
 
