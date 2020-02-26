@@ -47,7 +47,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
   - [Developmental vision](#developmental-vision) 
 
 <h1 id="1">数值计算</h1>
-<h2 id="2"迭代法</h2>
+<h2 id="2">迭代法</h2>
 
 牛顿迭代法（Newton's method）是一种求解方程的近似解得方法.因为很多方程并没有求根公式，因此，在允许的误差范围内，求出方程的近似解对于解方程也是一种重要的方法.
 
