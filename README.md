@@ -48,7 +48,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <h1 id="1">数值计算</h1>
 
   
-```markdown
+```python
 from sympy import *
 def f(x):
     return x**2-2
