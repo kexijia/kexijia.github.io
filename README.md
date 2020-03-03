@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to wangyu's GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/kexijia/kexijia.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -49,7 +49,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <h1 id="1">数值计算</h1>
 <h2 id="2">迭代法</h2>
 
-利用二分法求根，首先要确定求根区间[x_low, x_high],并且所求得方程f(x)=0,f(x)需要在所求的区间内是单调且连续的，根据连续函数的介值性($f$在取区间两个端点的值异号，那么在这个区间内必存在方程的根.）通过每次将区间一分为二，确定根的范围，来求方程的根.
+利用二分法求根，首先要确定求根区间[x_low, x_high],并且所求得方程f(x)=0,f(x)需要在所求的区间内是单调且连续的，根据连续函数的介值性(f在取区间两个端点的值异号，那么在这个区间内必存在方程的根.）通过每次将区间一分为二，确定根的范围，来求方程的根.
 
 ```python
 #二分法求方程的根
