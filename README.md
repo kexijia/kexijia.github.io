@@ -49,10 +49,54 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <h1 id="1">数值计算</h1>
 <h2 id="2">迭代法</h2>
 
+利用二分法求根，首先要确定求根区间$[x_low, x_high]$,并且所求得方程$f(x)=0$,$f(x)$需要在所求的区间内是单调且连续的，根据连续函数的介值性($f$在取区间两个端点的值异号，那么在这个区间内必存在方程的根.）通过每次将区间一分为2，确定根的范围，来求方程的根.
+
+```python
+#二分法求方程的根
+from sympy import *
+
+def f(x):
+    return  exp(x)+ x**3 - 2*x+5 # 方程的根约为-2.10
+
+
+x_low = -4.0
+x_high = 2.0
+e = 0.0001 
+
+f_low = f(x_low)
+f_high = f(x_high)
+
+if f_low * f_high > 0:
+    print('No Sultion')
+
+
+while abs(x_high-x_low) > e:
+    x_mid = (x_low + x_high) /2
+    f_mid = f(x_mid)
+
+    if f_low * f_mid < 0:
+        x_high = x_mid
+        f_high = f(x_mid)
+    elif f_mid * f_high < 0:
+        x_low = x_mid
+        f_low = f_mid
+
+    else:
+        x_low = x_mid
+        x_high = x_mid
+    
+x_root = (x_high+x_low)/2.0
+
+print(x_root)
+
+```
+
+
 牛顿迭代法（Newton's method）是一种求解方程的近似解得方法.因为很多方程并没有求根公式，因此，在允许的误差范围内，求出方程的近似解对于解方程也是一种重要的方法.
 
   
 ```python
+#牛顿迭代法求根
 from sympy import *
 def f(x):
     return exp(x)+ x**3 - 2*x+5
@@ -70,9 +114,6 @@ while abs(f(x0)) > e:
     x0 = x0 - f(x0)/(dify.subs('x', x0))
     print(x0)
 ```
-
-
-
 
 
 
